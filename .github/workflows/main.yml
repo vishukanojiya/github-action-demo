@@ -1,0 +1,15 @@
+name: My first workflow manuallu
+on: workflow_dispatch
+jobs:
+  job1:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Execute a linux command 
+      run: echo "Hello all"
+  job2:
+    runs-on: windows-latest
+    steps:
+    - name: Execute set of commands 
+      run: | 
+        hostname -s
+        echo "Bye bye"
